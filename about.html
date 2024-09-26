@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <!-- local stylesheet link -->
+    <link rel="stylesheet" href="document.css">
+
+                   <!-- boxicons stylesheet links -->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+                     <!-- OwlCarousel2 stylesheet link -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+                            
+                           <!-- light gallery stylesheeet link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.4.0/css/lightgallery.min.css"/>
+    <title>Namaste punjab</title>
+
+    <style>
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+
+
+.outter{
+  width:100%;
+  height:100%;
+  display:flex;
+  /* flex-direction:column; */
+  justify-content:center;
+  
+  
+}
+
+.video-container {
+  height: 500px;
+  width:100%;
+  max-width:2000px;
+  
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+video {
+  object-fit: cover; 
+  position: absolute;
+  height: 500px;
+  width:100%;
+  top: 0;
+  left: 0;
+}
+
+* {
+  box-sizing: border-box;
+  /* font-family: Raleway, sans-serif; */
+  
+}
+
+body {
+  background:antiquewhite;
+  color: white;
+}
+
+.video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, .2);
+  z-index: 1;
+}
+
+h1 {
+    color:white;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1;
+  font-family: Raleway;
+  font-size: 5vw;
+  font-weight:700;
+  /* font-weight:700; */
+  @media (max-width: 400px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
+
+.desc{
+  font-family: Raleway;
+  font-weight:400;
+  font-size:18px;
+
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  width: 70%;
+  margin:auto;
+}
+
+.button {
+  text-transform:uppercase;
+  background-color:transparent;
+  border-radius:40px;
+  padding:4px;
+  border:1px solid rgba(184,70,71,1);
+  margin-top:20px;
+  .inner{
+    background-color:rgba(184,70,71,1);
+    padding:15px 30px;
+     border-radius:40px;
+    
+    
+  }
+  
+}
+
+.support {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+  a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      bottom: -2px;
+      width: 0;
+      height: 1px;
+      background-color: rgba(white, .3);
+      transition: .3s;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+  }
+}
+
+/* .option2{
+  margin-top:50px;
+  .callout{
+    text-align:left;
+    align-self:flex-start;
+    h1{
+      text-align:left;
+      width:100%;
+    }
+    .button{
+      margin-right:auto;
+    }
+    .desc{
+      max-width:500px;
+      text-align:left;
+      align-self:flex-start;
+    }
+  }
+} */
+
+
+/* about section 3 styling */
+
+.about-one{
+    max-width:2000px;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(21rem,auto));
+    align-items:center;
+    gap:2rem;
+    margin-top:20px;
+}
+.about-one img{
+    height:500px;
+    width:500px;
+
+}
+.about-one .about-text span{
+    font-weight:600;
+    text-transform:uppercase;
+    color:var(--green-color);
+
+}
+.about-text p{
+    margin:0.5rem 0.1rem;
+    font-weight:500;
+}
+.about-one a {
+    display:inline-block;
+            background-color: var(--primary-color);
+            border:1px solid white;
+            color:white;
+            font-size:16px;
+            font-weight:400;
+            padding:20px 15px;
+            margin-top:10px;
+            transition:all 0.3s ease-in-out;
+            text-align: center;
+}
+.about-one a:hover{
+    color:var(--primary-color);
+            background-color:white;
+
+}
+/* .customers{
+    max-width:968px;
+    margin-left:auto;
+    margin-right:auto;   
+
+} */
+.section-heading h1{
+    font-weight: 700;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.square-wrapper::after,
+        .square-wrapper::before{
+            content:"";
+            display:inline-block;
+            margin:0 0.5rem;
+            width:700px;
+            height:2px;
+            background-color:var(--primary-color);
+    
+        }
+        .nav-items .nav-links{
+            font-weight: bold;
+        }
+
+
+/* about section 3 end here */
+
+#home .slide .content .heading{
+    color:white;
+    line-height:1;
+    font-family: 'dancing script', cursive;
+    font-size:5vw;
+    font-weight:400;
+    margin-bottom:40px;
+}
+/* when we started styling */
+.image-container {
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+    text-align: center;
+    padding: 20px; /* Padding around the container */
+    margin: 20px auto; /* Center the container */
+    width:100%; /* Maximum width of the container */
+}
+
+.image-container img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    display: block; /* Make sure images are centered */
+    margin-left: auto; /* Center images horizontally */
+    margin-right: auto;
+}
+
+.make-over{
+    text-align: center;
+    font-size: 18px;
+    color: #333; /* Adjust the color as needed */
+    padding:40px 40px;
+}
+
+/* end here */
+
+
+/* automatic image slider end here */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background: ; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+.container .item h2{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.item {
+  text-align: center;
+  margin: 10px;
+}
+
+.item img {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item p {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+    .about-one {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+    }
+
+    .about-one img {
+        height: auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-heading h1 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .square-wrapper::after,
+    .square-wrapper::before {
+        width: 100%; /* Adjust the width for smaller screens */
+        margin: 0; /* Remove margin for smaller screens */
+    }
+
+    .nav-items .nav-links {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    #home .slide .content .heading {
+        font-size: 10vw; /* Adjust the font size for smaller screens */
+    }
+
+    .image-container {
+        flex-direction: column; /* Change the direction to column for smaller screens */
+    }
+
+    .image-container img {
+        width: 100%; /* Adjust the width to fill the container for smaller screens */
+        margin-bottom: 10px; /* Adjust the margin for smaller screens */
+    }
+
+    .make-over {
+        padding: 20px; /* Adjust the padding for smaller screens */
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}
+    </style>
+   
+</head>
+<body>
+    <header>
+ 
+
+        <!-- prenav text start -->
+<!-- 
+        <div id="prenav-text">
+           <div class="flex-row">
+               <div class="contact-info">Phone no:<span>+91 9654422206</span> or Email us:
+                   <span>namastepunjab@gmail.com</span>
+           </div>
+           <div class="opening-times flex-row">
+               MON - SUN / 12.00pm - 1.00am
+               <ul class="social-links flex-row">
+                   <li><a href="https://www.facebook.com/namastepunjabindia/"><i class="bx bxl-facebook"></i></a></li>
+                   <li><a href="https://restaurant-guru.in/link/inst63492817"><i class="bx bxl-instagram"></i></a></li>
+                   <li><a href="https://wa.me/+919654422206?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Guru%20website!%20"><i class="bx bxl-whatsapp"></i></a></li>
+                   <li><a href="https://in.linkedin.com/in/sukant-raghav-49163954"><i class="bx bxl-linkdin"></i></a></li>
+               </ul>
+               </div>
+           </div>
+         </div> -->
+<!-- <prenav text end -->
+
+           <!-- navbar start -->
+
+           <nav id="navbar" class="navbar flex-row">
+
+               <div class="nav-icon menu-btn-wrapper">
+                   <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+               </div>
+
+
+               <div class="logo">
+                 <img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\th-removebg-preview.png" height="250px" alt="">
+               </div>
+               <ul id="nav-items" class="nav-items">
+                   <li><a href="hotel.html" class="nav-links">Home</a></li>
+                   <li><a href="about.html" class="nav-links">About</a> </li>
+                   <li><a href="image.html" class="nav-links">Gallery</a></li>
+                   <li><a href="contact.html" class="nav-links">Location</a></li>
+                   <li><a href="https://wa.me/+918745962571?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Namastepunjab%20website!%20" class="nav-links">Reservation</a></li>
+                   <!-- <li><a href="C:\Users\rahana khatoon\OneDrive\Pictures\new namste punjab,html\gallery.html" class="nav-links">Gallery</a></li> -->
+                   <li><a href="https://wa.me/+918745962571?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Namastepunjab%20website!%20" class="nav-links">Order Now</a></li>
+                  
+               </ul>
+               <!-- <ul class="nav-btns">
+                   <div class="search-btn-wrapper nav-icon">
+                     <a href="#"> <i class="searchbtn bx bx-search-alt-2"></i></a>
+                       <div id="search-form" class="search-form">
+                           <form action="#">
+                               <input type="search" class="search-data" placeholder="search" required>
+                               <button type="submit" class="bx bx-search-alt-2"></button>
+                           </form>
+                       </div> 
+                   
+                    </div> -->
+                   <!-- <div class="cart-btn-wrapper nav-icon">
+                     <a href="#"><i class="cartbtn bx bx-cart"></i></a>
+                       <div id="cart" class="cart flex-row">
+                           <span>no products in the cart</span>
+                       </div>
+                   </div> -->
+                   <!-- <div class="nav-icon">
+                    <a href="#"><i class="darkbtn bx bx-moon"></i></a>
+                   </div>  -->
+
+                   <div class="sidebar">
+                    <a href="#" class="close-btn">&times;</a>
+                    <a href="hotel.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="image.html">Gallery</a>
+                    <a href="contact.html">Location</a>
+                  </div>
+                  
+                  <div class="content">
+                    <header>
+                      <button class="open-btn">☰</button>
+                    </header>
+                    </div>
+               </ul>
+           </nav>
+           </header>
+<section id="home">
+ <div class="home-carousel owl-carousel owl-theme">
+   <div class="slide slide1">
+   <div class="content">
+       <p class="sub-heading"><img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\Screenshot_2024-04-15_200109-removebg-preview.png" alt=""></p>
+       <h1 class="heading">Best Quality</h1>
+       <p class="sub-heading-2">Food</p>
+   </div>
+   </div>
+   <div class="slide slide2">
+       <div class="content">
+           <p class="sub-heading"><img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\Screenshot_2024-04-15_200109-removebg-preview.png" alt=""></p>
+           <h1 class="heading">Cooking </h1>
+           <p class="sub-heading-2"> 1977</p>
+       </div>
+       </div>
+       <div class="slide slide3">
+           <div class="content">
+               <p class="sub-heading"><img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\Screenshot_2024-04-15_200109-removebg-preview.png" alt=""></p>
+               <h1 class="heading">Delicious</h1> </h1>
+               <p class="sub-heading-2">Food</p>
+           </div>
+           </div>
+ </div>
+</section>
+
+<!-- about section start from here -->
+<section class="outter option1">
+    <section class="video-container">
+      <video src="C:\Users\rahana khatoon\Downloads\Food slow motion.mp4" autoplay loop playsinline muted></video>
+      <div class="callout">
+      <h1>Namaste Punjab</h1>
+        <div class="desc">It's said that the way to someone heart goes through stomach .food is itergal pat of our life . connecting people with love</div>
+        <div class="button"><div class="inner">So enjoy The Love<div></div>
+      </div>
+      
+      </div>
+    </section>
+    </section>
+      
+    <!-- <section class="outter option2">
+    <section class="video-container">
+      <video src="http://fugammadev.com/PAWS/wp-content/uploads/2018/02/8863081.mp4" autoplay loop playsinline muted></video>
+      <div class="callout">
+        <h1>Hi, I'm Bosco</h1>
+        <div class="desc">They say every wrinkle is worth a thousand cuddles.  I just need a home and loving family to prove it.</div>
+        <div class="button"><div class="inner">Take Me Home!<div></div>
+      </div>
+      
+      </div>
+    </section> -->
+    </section>
+
+
+
+
+
+<!-- about  into section end here -->
+
+<!-- about section 2 here -->
+   <!-- about section start -->
+
+   <section id="about" class="flex-row">
+    <div class="booking-form">
+        <span>Take A</span>
+        <H2>RESERVATION</H2>
+        <form action="#">
+            <input type="name" name="name"  id="name" placeholder="name" required>
+            <input type="email" name="email" id="email" placeholder="email" required>
+            <input type="phone" name="phone" id="phone" placeholder="phone" required>
+            <input type="date" name="date" id="date" placeholder="date" required>
+            <input type="time" name="time" id="time" placeholder="time" required>
+            <textarea name="msg" id="msg">Message</textarea>
+            <button type="button" class="btn6" onclick="sendWhatsAppMessage()">Book Now</button>
+          
+           
+        </form>
+      
+      
+    </div>
+    <div class="text-wrapper">
+        <!-- <H3>HEAD CHEF</H3> -->
+        <P>Since 1977, Namaste Punjab has been more than a restaurant; it's been a home away from home, a place where warmth meets flavor.<br>
+             Steeped in tradition and renowned for its exceptional service, Namaste Punjab has perfected the art of hospitality.<br>
+              As you step inside, you are not just a guest, but a cherished member of the family. The atmosphere is a symphony of aromas, colors, and laughter, <br>
+              transporting you to the heart of Punjab. Here, every meal is not just a culinary delight but a celebration of culture and connection.<br>
+               Welcome to Namaste Punjab, where every visit feels like coming home.<br>
+
+        </P>
+            </P>
+            <div class="sign">
+                <img id="signimg" src="C:\Users\rahana khatoon\Downloads\Screenshot_2024-04-15_184615-removebg-preview-removebg-preview.png" alt="#">
+            </div>
+            <div class="img-wrapper">
+            <img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\th-removebg-preview.png" alt="#">
+            </div>
+    </div>
+  </section>     
+  
+
+<!-- about section 2 end here -->
+
+
+
+<!-- about section 3 start here -->
+<div class="section-heading">
+    <h1>ABOUT US</h1>
+    <div class="square-wrapper flex-row">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</div>
+<section class="about-one" id="about-one">
+    <img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\namste punjab professional image\kishan lal ji main founder of namaste punjab.jpeg" alt="">
+    <div class="about-text">
+    <p>In the heart of the Indian subcontinent, where the bustling Delhi-Mumbai highway carves its path through the countryside, there stood a humble dhaba that would soon become a legend in its own right. It was 1977 when Mr. Kishan Lal ji, a man with a vision and a palate for authentic Punjabi cuisine, set up his modest eatery, Haryana Hotel, at Mudasa.
+
+        As the wheels of time turned, so did the fortunes of Haryana Hotel. The aroma of spices, the sizzle of tandoori, and the warmth of hospitality drew travelers from far and wide. Mr. Kishan Lal's passion for food and dedication to his craft turned his dhaba into a sanctuary for weary travelers and food enthusiasts alike.
+        
+        In 1984, the baton of this culinary legacy was passed on to Mr. Kishan Lal's elder son, Mr. Pankaj Dhingra. With his father's recipes and guidance, Pankaj stepped into the world of food business. His dedication and commitment to maintaining the standards set by his father turned out to be the secret ingredient that kept Haryana Hotel shining.
+        
+       </p>
+            <a href="read.html" class="btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+</section>
+<!-- when we started -->
+
+  <div class="section-heading">
+    <h1>When We Started </h1>
+    <div class="square-wrapper flex-row">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</div>
+<div class="image-container">
+  <img src="baree.jpg" alt="">
+  <p class="make-over">After the closure of their beloved dhaba, Haryana Hotel, Mr. Pankaj and Mr. Jugesh found themselves longing to reignite their passion for food. Despite working in different industries, their love for serving delicious Punjabi cuisine never faded. In 2017, their culinary dreams took flight once again with the establishment of the iconic Namaste Punjab.
+
+    Starting as a cloud kitchen, Namaste Punjab quickly gained popularity for its authentic Punjabi dishes and cuisine. The flavors of Punjab, perfected over generations, found new life in the kitchen of Namaste Punjab. The aroma of spices, the sizzle of tandoori, and the warmth of Punjabi hospitality filled the air once again.
+    
+    The success of Namaste Punjab skyrocketed, attracting the attention of various online food delivery platforms. Recognizing the immense potential, these platforms expressed interest in investing to open Namaste Punjab dine-in outlets. From a small cloud kitchen to a burgeoning culinary empire, Namaste Punjab's journey is a testament to the unwavering passion and dedication of Mr. Pankaj and Mr. Jugesh to bring the authentic flavors of Punjab to the world.
+    
+    </p>
+  <img src="baree.jpg" alt="">
+</div>
+
+<!-- automatic image slider with changing text -->
+
+<!-- <div class="section-heading">
+  <h1>Our Founders </h1>
+  <div class="square-wrapper flex-row">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+  </div>
+  <div class="container">
+    <div class="item">
+      <img src="https://www.marketingdonut.co.uk/sites/default/files/better_business_owner.jpg" alt="Image 1">
+      <h2>Pankaj Dhingra</h2>
+      <p> Promoter & Director
+        </p>
+    </div>
+    <div class="item">
+      <img src="https://www.marketingdonut.co.uk/sites/default/files/better_business_owner.jpg" alt="Image 2">
+      <h2>Jugesh Arora</h2>
+      <p>Co-founder
+      </p>
+    </div>
+    <div class="item">
+      <img src="https://www.marketingdonut.co.uk/sites/default/files/better_business_owner.jpg" alt="Image 3">
+      <h2>Puneet Mahajan</h2>
+      <p>Director & Co-founder
+        </p>
+    </div>
+    <div class="item">
+      <img src="https://www.marketingdonut.co.uk/sites/default/files/better_business_owner.jpg" alt="Image 4">
+      <h2>Amit Verma</h2>
+      <p>Co-founder
+        
+        </p>
+    </div>
+    <div class="item">
+      <img src="https://www.marketingdonut.co.uk/sites/default/files/better_business_owner.jpg" alt="Image 3">
+      <h2>Sahil Dhingra</h2>
+      <p>Director
+      </p>
+    </div>
+  </div> -->
+
+<!-- automatixc image slider with changing text end here -->
+  
+<!-- about section 3 end here  -->
+<footer id="footer">
+    <div class="footer-top flex-row">
+        <div class="flex-col">
+            <h4 class="logo-name"> Namaste Punjab</h4>
+            <p class="desc">At Namaste Punjab, we are driven by an unwavering commitment to uncompromising freshness and quality. Our dedication to gracious hospitality is evident in every dish we serve. With a growing list of restaurants, we invite you to experience the authentic flavors and warm hospitality of Punjab like never before.</p>
+
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/namastepunjabindia/"><i class="icon bx bxl-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/namastepunjab/"><i class="icon bx bxl-instagram"></i></a></li>
+                <li><a href="https://wa.me/+919654422206?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Guru%20website!%20"><i class="icon bx bxl-whatsapp"></i></a></li>
+                <!-- <li><a href="#"><i class="icon bx bxl-linkedin"></i></a></li> -->
+            </ul>
+        </div>
+
+        <div class="flex-col">
+           <h4 class="heading">ADDRESS</h4>
+           <div class="map-1">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=28.6074146000,77.4358186000"><i class='bx bxs-map' ></i></a></div>
+            <P class="desc">Galaxy Blue Sapphire Mall ,Greater Noida</P>
+            <p class="desc">p: +91 96544 22206<br>E:namstepunjab@gmail.com</p>
+
+
+            <div class="map-1">
+             <a href="https://www.google.com/maps/dir/?api=1&destination=28.6383831903,77.3658584431"><i class='bx bxs-map' ></i></a></div>
+             <P class="desc">Windsor Park,Indrapuram</P>
+             <p class="desc">p: +91 9319321416<br>E:namstepunjab@gmail.com</p>
+
+             <div class="map-1">
+                 <a href="https://maps.app.goo.gl/HwrfNw9UStpibZcj8?g_st=iw"><i class='bx bxs-map' ></i></a></div>
+                 <P class="desc">Advant Navis Business Park , Greater Noida</P>
+                 <p class="desc">p: +91 96544 22206</p>
+
+        </div>
+
+        <div class="flex-col">
+            <h4 class="heading">OPEN HOURS</h4>
+            <ul class="timing flex-col">
+                <li>
+                    <p class="days">Monday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+                <li>
+                    <p class="days">Tuesday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+                <li>
+                    <p class="days">Wednesday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+                <li>
+                    <p class="days">Thursday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+                <li>
+                    <p class="days">Friday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+                <li>
+                    <p class="days">Saturday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+                <li>
+                    <p class="days">Sunday</p>
+                    <div class="time">12:00 PM - 1:00 AM</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-col">
+            <h4 class="heading">MORE INFO</h4>
+            <a href="image.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="https://www.google.com/maps/reserve/v/dine/c/4Y6eedEkXKw?source=pa&opi=89978449&hl=en-IN&gei=2a83ZoOACZST4-EPn5KzyAk&sourceurl=https://www.google.com/search?q%3Dnamaste%2Bpunjab%2Breviews%26sca_esv%3D1b3eff12a321d9fe%26sxsrf%3DADLYWIIpxVat_Sjyw5taS_WTKqPXIzMtnQ:1714925521988%26source%3Dhp%26ei%3D0a83ZsblOeyIjuMPi62AkAw%26iflsig%3DAL9hbdgAAAAAZje94U7A9clUkN_a5GezFnXHtxUiFWL3%26oq%3Dnamaste%2B%26gs_lp%3DEgdnd3Mtd2l6IghuYW1hc3RlICoCCAAyChAjGIAEGCcYigUyChAjGIAEGCcYigUyDhAuGIAEGMcBGI4FGK8BMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyDhAuGIAEGMcBGJgFGK8BMggQABiABBixA0iCI1DGAljCGHACeACQAQCYAYECoAHUDaoBBTAuNS40uAEByAEA-AEBmAILoAKiDqgCCsICBxAjGCcY6gLCAhEQLhiABBixAxjRAxiDARjHAcICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhQQLhiABBixAxiDARjHARiOBRivAcICCBAuGIAEGLEDwgILEAAYgAQYkgMYigXCAggQABiABBjJA8ICCBAAGIAEGJIDwgILEAAYgAQYsQMYyQOYAxiSBwUyLjUuNKAHrXM%26sclient%3Dgws-wiz">Reservation</a>
+            <a href="https://r.search.yahoo.com/_ylt=AwrOqofkqDhmL1QTW5xXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1716198885/RO=10/RU=https%3a%2f%2fwww.zomato.com%2fnamastepunjabgaurcity/RK=2/RS=ni5Jyk6tGI6e8PJdGNvhHXMtGk4-">Order Now</a>
+        
+        </div>
+    </div>
+    <div class="footer-bottom flex-row">
+        <span>Copyright & Copy 2024 All right reserved ! Made by Anshu Malakar</span>
+    </div>
+  </footer>
+<!-- zoom in function with the help of java script -->
+<!-- <script>
+    function zoomIn(image) {
+      image.classList.toggle('zoomed');
+    }
+  </script> -->
+
+  <!-- bar button formstaion script start -->
+
+  <script>document.addEventListener('DOMContentLoaded', function () {
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const sidebar = document.querySelector('.sidebar');
+  
+    openBtn.addEventListener('click', function () {
+      sidebar.style.width = '250px';
+    });
+  
+    closeBtn.addEventListener('click', function () {
+      sidebar.style.width = '0';
+    });
+  });</script>
+  <!-- bar formation button end here -->
+
+<!-- slider with changing text -->
+
+
+<!-- booking form button script start from hetre -->
+<script>
+  function sendWhatsAppMessage() {
+      var name = document.getElementById('name').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+      var msg = document.getElementById('msg').value;
+
+
+      var message = `Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0ADate: ${date}%0ATime: ${time}  %0Amsg: ${msg}`;
+      var whatsappUrl = `https://wa.me/919654422206?text=${message}`;
+
+      window.open(whatsappUrl, '_blank');
+  }
+</script>
+<!-- booking form button script strat from here -->
+
+
+
+<!-- slider with changing text -->
+
+<!-- jquery script link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- owl corousel script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- light gallery script -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.4.0/js/lightgallery.min.js"></script>
+<!-- <script>
+lightGallery(document.querySelector('.gallery-wrapper'));
+</script> -->
+
+<!-- link javascript page -->
+<script src="new.js"></script>
+
+</body>
+</html>

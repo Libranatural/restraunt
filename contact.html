@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <!-- local stylesheet link -->
+    <link rel="stylesheet" href="document.css">
+
+                   <!-- boxicons stylesheet links -->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+                     <!-- OwlCarousel2 stylesheet link -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+                            
+                           <!-- light gallery stylesheeet link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.4.0/css/lightgallery.min.css"/>
+    <title>Namaste punjab</title>
+    <style>
+        .gallery h3{
+            margin-bottom:100px;
+        }
+        
+        .contact{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            margin-bottom: 60px;
+            box-shadow:1px 2px 11px 4px rgb(14 55 54/15%);
+        }
+        .contact .address-container .map-1 i{
+            margin-left:90px;
+            transition:all 0.3s ease-in-out; 
+        }
+        .contact .address-container .map-1 i:hover{
+            transform: scale(1);
+            color:black;
+        }
+        .contact .address-container{
+            padding:30px 30px;
+            box-shadow:1px 2px 11px 4px rgb(14 55 54/15%);
+            transition: all 0.3s ease-in-out;
+        }
+        .contact .address-container:hover{
+            transform:translateY(10px);
+            transition:0.2s all linear;
+        }
+
+
+        @media screen and (max-width: 768px) {
+  .gallery h3 {
+    margin-bottom: 50px; /* Adjusted margin for smaller screens */
+  }
+
+  .contact {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center;
+  }
+
+  .contact .address-container {
+    margin-top: 30px; /* Add margin to separate contact address containers */
+  }
+
+  .contact .address-container .map-1 i {
+    margin-left: 0; /* Remove left margin for icons on smaller screens */
+  }
+}
+     
+
+    </style>
+   
+</head>
+<body>
+   
+ <header>
+ 
+
+         <!-- prenav text start -->
+
+         <!-- <div id="prenav-text">
+            <div class="flex-row">
+                <div class="contact-info">Phone no:<span>+91 9654422206</span> or Email us:
+                    <span>namastepunjab@gmail.com</span>
+            </div>
+            <div class="opening-times flex-row">
+                MON - SUN / 12.00pm - 1.00am
+                <ul class="social-links flex-row">
+                    <li><a href="https://www.facebook.com/namastepunjabindia/"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://restaurant-guru.in/link/inst63492817"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://wa.me/+919654422206?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Guru%20website!%20"><i class="bx bxl-whatsapp"></i></a></li>
+                    <li><a href="https://in.linkedin.com/in/sukant-raghav-49163954"><i class="bx bxl-linkdin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+          </div> -->
+<!-- <prenav text end -->
+
+            <!-- navbar start -->
+
+            <nav id="navbar" class="navbar flex-row">
+
+                <div class="nav-icon menu-btn-wrapper">
+                    <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+                </div>
+
+
+                <div class="logo">
+                  <img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\th-removebg-preview.png" height="250px" alt="">
+                </div>
+                <ul id="nav-items" class="nav-items">
+                    <li><a href="hotel.html" class="nav-links">Home</a></li>
+                    <li><a href="About.html" class="nav-links">About</a></li>
+                    <li><a href="image.html" class="nav-links">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-links">Location</a></li>
+                    <li><a href="https://wa.me/+918745962571?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Namastepunjab%20website!%20" class="nav-links">Reservation</a></li>
+                    <!-- <li><a href="gallery.html" class="nav-links">Gallery</a></li> -->
+                    <li><a href="https://wa.me/+918745962571?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Namastepunjab%20website!%20" class="nav-links">Order Now</a></li>
+                   
+                   
+                </ul>
+                <ul class="nav-btns">
+                    <!-- <div class="search-btn-wrapper nav-icon">
+                      <a href="#"> <i class="searchbtn bx bx-search-alt-2"></i></a>
+                        <div id="search-form" class="search-form">
+                            <form action="#">
+                                <input type="search" class="search-data" placeholder="search" required>
+                                <button type="submit" class="bx bx-search-alt-2"></button>
+                            </form>
+                        </div> 
+                    
+                     </div> -->
+                    <!-- <div class="cart-btn-wrapper nav-icon">
+                      <a href="#"><i class="cartbtn bx bx-cart"></i></a>
+                        <div id="cart" class="cart flex-row">
+                            <span>no products in the cart</span>
+                        </div>
+                    </div> -->
+                    <div class="sidebar">
+                        <a href="#" class="close-btn">&times;</a>
+                        <a href="hotel.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="image.html">Gallery</a>
+                        <a href="contact.html">Location</a>
+                      </div>
+                      
+                      <div class="content">
+                        <header>
+                          <button class="open-btn">☰</button>
+                          </header>
+                          </div>
+                </ul>
+            </nav>
+            </header>
+<section id="home">
+  <div class="home-carousel owl-carousel owl-theme">
+    <div class="slide slide1">
+    <div class="content">
+        <p class="sub-heading"><img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\Screenshot_2024-04-15_200109-removebg-preview.png" alt=""></p>
+        <h1 class="heading">Best Quality</h1>
+        <p class="sub-heading-2">Food</p>
+    </div>
+    </div>
+    <div class="slide slide2">
+        <div class="content">
+            <p class="sub-heading"><img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\Screenshot_2024-04-15_200109-removebg-preview.png" alt=""></p>
+            <h1 class="heading">Cooking </h1>
+            <p class="sub-heading-2">1977</p>
+        </div>
+        </div>
+        <div class="slide slide3">
+            <div class="content">
+                <p class="sub-heading"><img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\Screenshot_2024-04-15_200109-removebg-preview.png" alt=""></p>
+                <h1 class="heading">Delicious</h1> </h1>
+                <p class="sub-heading-2">Food</p>
+            </div>
+            </div>
+  </div>
+</section>
+
+                          <!-- home section end -->
+                          
+
+                          <!-- contact section start -->
+                          <section id="gallery">
+
+                            <h3>Reach Out To Us</h3>
+                            <div class="square-wrapper flex-row">
+                                <!-- <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                 -->
+                            </div>
+                            <div class="contact">
+                            
+                                <div class="address-container">
+                                    <div class="map-1">
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=28.6074146000,77.4358186000"><i class='bx bxs-map' ></i></a></div>
+                                    <P class="desc">4th Floor,<br>
+                                        Galaxy Blue Sapphire Plaza,<br>
+                                         Gautam Buddha Nagar,<br>
+                                         Amrapali Dream Valley<br> 
+                                         Greater Noida
+                                       </P>
+                                    <p class="desc">p: +91 96544 22206<br>E:namstepunjab@gmail.com</p>
+                                    </div>
+
+
+                                    <div class="address-container">
+                                        <div class="map-1">
+                                        <a href="https://www.google.com/maps/dir/?api=1&destination=28.6383831903,77.3658584431"><i class='bx bxs-map' ></i></a></div>
+                                        <P class="desc">Shop 13, Plot 5, Ground Floor,<br>
+                                             Windsor Park, Vaibhav Khand,<br>
+                                              Indirapuram, Ghaziabad</P>`
+                                        <p class="desc">p: +91 9319321416<br>
+                                            E:namstepunjab@gmail.com</p>
+                                        </div>
+
+                                            <div class="address-container">
+                                                <div class="map-1">
+                                                <a href="https://maps.app.goo.gl/HwrfNw9UStpibZcj8?g_st=iw"><i class='bx bxs-map' ></i></a></div>
+                                                <P class="desc">Advant Navis Business Park<br>
+                                                     Noida,Sector 142<br>
+                                                    Uttarprades  201305</P>
+                                                <p class="desc">p: +91 9319321416<br>E:namstepunjab@gmail.com</p>
+                                        </div>
+                            </div>
+
+                        </section>
+
+
+
+
+
+
+                            <!-- contact section end here  -->
+
+                     <!-- footer section start  -->
+                          <footer id="footer">
+                            <div class="footer-top flex-row">
+                                <div class="flex-col">
+                                    <h4 class="logo-name"> Namaste Punjab</h4>
+                                    <p class="desc">"At Namaste Punjab, we are driven by an unwavering commitment to uncompromising freshness and quality. Our dedication to gracious hospitality is evident in every dish we serve. With a growing list of restaurants, we invite you to experience the authentic flavors and warm hospitality of Punjab like never before.</p>
+
+                                    <ul class="social-links">
+                                        <li><a href="https://www.facebook.com/namastepunjabindia/"><i class="icon bx bxl-facebook"></i></a></li>
+                                        <li><a href="https://www.instagram.com/namastepunjab/"><i class="icon bx bxl-instagram"></i></a></li>
+                                        <li><a href="https://wa.me/+919654422206?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Guru%20website!%20"><i class="icon bx bxl-whatsapp"></i></a></li>
+                                        <!-- <li><a href="#"><i class="icon bx bxl-linkedin"></i></a></li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="flex-col">
+                                   <h4 class="heading">ADDRESS</h4>
+                                  
+
+
+
+                                   <div class="map-1">
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=28.6074146000,77.4358186000"><i class='bx bxs-map' ></i></a></div>
+                                    <P class="desc">Galaxy Blue Sapphire Mall ,Greater Noida</P>
+                                    <p class="desc">p: +91 96544 22206<br>E:namstepunjab@gmail.com</p>
+
+
+                                    <div class="map-1">
+                                     <a href="https://www.google.com/maps/dir/?api=1&destination=28.6383831903,77.3658584431"><i class='bx bxs-map' ></i></a></div>
+                                     <P class="desc">Windsor Park,Indrapuram</P>
+                                     <p class="desc">p: +91 9319321416<br>E:namstepunjab@gmail.com</p>
+
+                                     <div class="map-1">
+                                         <a href="https://maps.app.goo.gl/HwrfNw9UStpibZcj8?g_st=iw"><i class='bx bxs-map' ></i></a></div>
+                                         <P class="desc">Advant Navis Business Park , Greater Noida</P>
+                                         <p class="desc">p: +91 96544 22206</p>
+
+
+
+
+                                
+                                </div>
+
+                                <div class="flex-col">
+                                    <h4 class="heading">OPEN HOURS</h4>
+                                    <ul class="timing flex-col">
+                                        <li>
+                                            <p class="days">Monday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                        <li>
+                                            <p class="days">Tuesday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                        <li>
+                                            <p class="days">Wednesday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                        <li>
+                                            <p class="days">Thursday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                        <li>
+                                            <p class="days">Friday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                        <li>
+                                            <p class="days">Saturday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                        <li>
+                                            <p class="days">Sunday</p>
+                                            <div class="time">12:00 PM - 1:00 AM</div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="flex-col">
+                                    <h4 class="heading">MORE INFO</h4>
+                                    <a href="image.html">Gallery</a>
+                                    <a href="about.html">About</a>
+                                    <a href="https://www.google.com/maps/reserve/v/dine/c/4Y6eedEkXKw?source=pa&opi=89978449&hl=en-IN&gei=2a83ZoOACZST4-EPn5KzyAk&sourceurl=https://www.google.com/search?q%3Dnamaste%2Bpunjab%2Breviews%26sca_esv%3D1b3eff12a321d9fe%26sxsrf%3DADLYWIIpxVat_Sjyw5taS_WTKqPXIzMtnQ:1714925521988%26source%3Dhp%26ei%3D0a83ZsblOeyIjuMPi62AkAw%26iflsig%3DAL9hbdgAAAAAZje94U7A9clUkN_a5GezFnXHtxUiFWL3%26oq%3Dnamaste%2B%26gs_lp%3DEgdnd3Mtd2l6IghuYW1hc3RlICoCCAAyChAjGIAEGCcYigUyChAjGIAEGCcYigUyDhAuGIAEGMcBGI4FGK8BMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyDhAuGIAEGMcBGJgFGK8BMggQABiABBixA0iCI1DGAljCGHACeACQAQCYAYECoAHUDaoBBTAuNS40uAEByAEA-AEBmAILoAKiDqgCCsICBxAjGCcY6gLCAhEQLhiABBixAxjRAxiDARjHAcICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhQQLhiABBixAxiDARjHARiOBRivAcICCBAuGIAEGLEDwgILEAAYgAQYkgMYigXCAggQABiABBjJA8ICCBAAGIAEGJIDwgILEAAYgAQYsQMYyQOYAxiSBwUyLjUuNKAHrXM%26sclient%3Dgws-wiz">Reservation</a>
+                                    <a href="https://r.search.yahoo.com/_ylt=AwrOqofkqDhmL1QTW5xXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1716198885/RO=10/RU=https%3a%2f%2fwww.zomato.com%2fnamastepunjabgaurcity/RK=2/RS=ni5Jyk6tGI6e8PJdGNvhHXMtGk4-">Order Now</a>
+                                
+                                </div>
+                            </div>
+                            <div class="footer-bottom flex-row">
+                                <span>Copyright & Copy 2024 All right reserved ! Made by Anshu Malakar</span>
+                            </div>
+                          </footer>
+
+                          <script>document.addEventListener('DOMContentLoaded', function () {
+                            const openBtn = document.querySelector('.open-btn');
+                            const closeBtn = document.querySelector('.close-btn');
+                            const sidebar = document.querySelector('.sidebar');
+                          
+                            openBtn.addEventListener('click', function () {
+                              sidebar.style.width = '250px';
+                            });
+                          
+                            closeBtn.addEventListener('click', function () {
+                              sidebar.style.width = '0';
+                            });
+                          });</script>
+
+
+                        <!-- footer id end -->
+                         
+       <!-- jquery script link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- owl corousel script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+                 <!-- light gallery script -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.4.0/js/lightgallery.min.js"></script>
+<!-- <script>
+lightGallery(document.querySelector('.gallery-wrapper'));
+</script> -->
+
+  <!-- link javascript page -->
+<script src="new.js"></script>
+
+</body>
+</html>

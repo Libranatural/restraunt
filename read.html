@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <!-- local stylesheet link -->
+    <link rel="stylesheet" href="document.css">
+
+                   <!-- boxicons stylesheet links -->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+                     <!-- OwlCarousel2 stylesheet link -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+                            
+                           <!-- light gallery stylesheeet link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.4.0/css/lightgallery.min.css"/>
+    <title>Namaste punjab</title>
+
+    <style>
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  
+}
+
+
+.about-one{
+    max-width:2000px;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(21rem,auto));
+    align-items:center;
+    gap:2rem;
+    margin-top:20px;
+}
+.about-one img{
+    height:500px;
+    width:500px;
+
+}
+.about-one .about-text span{
+    font-weight:600;
+    text-transform:uppercase;
+    color:var(--green-color);
+
+}
+.about-text p{
+    margin:0.5rem 0.1rem;
+    font-weight:500;
+}
+.about-one a {
+    display:inline-block;
+            background-color: var(--primary-color);
+            border:1px solid white;
+            color:white;
+            font-size:16px;
+            font-weight:400;
+            padding:20px 15px;
+            margin-top:10px;
+            transition:all 0.3s ease-in-out;
+            text-align: center;
+}
+.about-one a:hover{
+    color:var(--primary-color);
+            background-color:white;
+
+}
+@media screen and (max-width: 768px) {
+  .about-one {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  .about-one img {
+    height: 300px;
+    width: 300px;
+  }
+}
+/* .customers{
+    max-width:968px;
+    margin-left:auto;
+    margin-right:auto;   
+
+} */
+/* .section-heading h1{
+    font-weight: 700;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.square-wrapper::after,
+        .square-wrapper::before{
+            content:"";
+            display:inline-block;
+            margin:0 0.5rem;
+            width:700px;
+            height:2px;
+            background-color:var(--primary-color);
+    
+        }
+        .nav-items .nav-links{
+            font-weight: bold;
+        } */
+
+
+/* about section 3 end here */
+
+/* artile styling */
+
+
+/* body {
+  position: relative;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 8rem;
+  /* margin: -10px -10px 0 -10px; */
+  /* background-color: snow;
+  font-weight:700;
+} */ 
+
+article {
+  height:100%;
+}
+
+.image {
+  background-image: url(restrob.jpg);
+  background-size: cover;
+}
+
+.headline {
+  background-color: saddlebrown;
+  color: navajowhite;
+  padding: 0.75rem;
+  text-align: center;
+  box-shadow: 0 1.2em 0 0.75em;
+}
+
+.headline p {
+  font-size: 1.25em;
+}
+.headline h1 {
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 3px 3px 0px #3e2723;
+  color:white;
+}
+
+.byline {
+  margin: 0 1rem 1rem 1rem;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  letter-spacing: -0.2px;
+}
+
+.article-header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+.image {
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+}
+.headline {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  z-index:0;
+}
+@media screen and (max-width: 768px) {
+  .headline h1 {
+    font-size: 2em;
+  }
+
+  .byline {
+    margin: 0 0.5rem 1rem 0.5rem;
+    font-size: 0.8em;
+  }
+
+  .article-header {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+/* article styling end here */
+
+
+
+    </style>
+   </head>
+   <body>
+    <header>
+ 
+
+        <!-- prenav text start -->
+<!-- 
+        <div id="prenav-text">
+           <div class="flex-row">
+               <div class="contact-info">Phone no:<span>+91 9654422206</span> or Email us:
+                   <span>namastepunjab@gmail.com</span>
+           </div>
+           <div class="opening-times flex-row">
+               MON - SUN / 12.00pm - 1.00am
+               <ul class="social-links flex-row">
+                   <li><a href="https://www.facebook.com/namastepunjabindia/"><i class="bx bxl-facebook"></i></a></li>
+                   <li><a href="https://restaurant-guru.in/link/inst63492817"><i class="bx bxl-instagram"></i></a></li>
+                   <li><a href="https://wa.me/+919654422206?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Guru%20website!%20"><i class="bx bxl-whatsapp"></i></a></li>
+                   <li><a href="https://in.linkedin.com/in/sukant-raghav-49163954"><i class="bx bxl-linkdin"></i></a></li>
+               </ul>
+               </div>
+           </div>
+         </div> -->
+<!-- <prenav text end -->
+
+           <!-- navbar start -->
+
+           <nav id="navbar" class="navbar flex-row">
+
+               <div class="nav-icon menu-btn-wrapper">
+                   <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+               </div>
+
+
+               <div class="logo">
+                 <img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\th-removebg-preview.png" height="250px" alt="">
+               </div>
+               <ul id="nav-items" class="nav-items">
+                   <li><a href="hotel.html" class="nav-links">Home</a></li>
+                   <li><a href="about.html" class="nav-links">About</a> </li>
+                   <li><a href="image.html" class="nav-links">Gallery</a></li>
+                   <li><a href="contact.html" class="nav-links">Location</a></li>
+                   <!-- <li><a href="C:\Users\rahana khatoon\OneDrive\Pictures\new namste punjab,html\gallery.html" class="nav-links">Gallery</a></li> -->
+                   <li><a href="https://wa.me/+918745962571?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Namastepunjab%20website!%20" class="nav-links">Reservation</a></li>
+                   <li><a href="https://wa.me/+918745962571?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Namastepunjab%20website!%20" class="nav-links">Order Now</a></li>
+                  
+               </ul>
+               <!-- <ul class="nav-btns">
+                   <div class="search-btn-wrapper nav-icon">
+                     <a href="#"> <i class="searchbtn bx bx-search-alt-2"></i></a>
+                       <div id="search-form" class="search-form">
+                           <form action="#">
+                               <input type="search" class="search-data" placeholder="search" required>
+                               <button type="submit" class="bx bx-search-alt-2"></button>
+                           </form>
+                       </div> 
+                   
+                    </div> -->
+                   <!-- <div class="cart-btn-wrapper nav-icon">
+                     <a href="#"><i class="cartbtn bx bx-cart"></i></a>
+                       <div id="cart" class="cart flex-row">
+                           <span>no products in the cart</span>
+                       </div>
+                   </div> -->
+                   <!-- <div class="nav-icon">
+                    <a href="#"><i class="darkbtn bx bx-moon"></i></a>
+                   </div>  -->
+
+                   <div class="sidebar">
+                    <a href="#" class="close-btn">&times;</a>
+                    <a href="hotel.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="image.html">Gallery</a>
+                    <a href="contact.html">Location</a>
+                  </div>
+                  
+                  <div class="content">
+                    <header>
+                      <button class="open-btn">☰</button>
+                    </header>
+                    </div>
+               </ul>
+           </nav>
+           </header>
+
+              <!-- video container fitter  -->
+
+              <!-- <section class="outter option1">
+                <section class="video-container">
+                  <video src="C:\Users\rahana khatoon\Downloads\Food slow motion.mp4" autoplay loop playsinline muted></video>
+                  <div class="callout">
+                    <h1>Namaste Punjab</h1>
+                    <div class="desc">It's said that the way to someone heart goes through stomach .food is itergal pat of our life . connecting people with love</div>
+                    <div class="button"><div class="inner">So enjoy The Love<div></div>
+                  </div>
+                  
+                  </div>
+                </section>
+                </section> -->
+
+              <!-- video contain filter end here -->
+
+
+              <!-- read more section start from here -->
+
+              <main>
+                <article>
+                  <div class="article-header">
+                    <div class="headline">
+                      <h1>Story About Kishan Lal Dhingra</h1>
+                      <div class="byline">"Experience authentic Punjabi flavors at Namaste Punjab. Let our vibrant spices and rich aromas take your taste buds on a journey!"
+                      </div>
+                    </div>
+                    <div class="image"></div>
+                  </div>
+                  <section class="about-one" id="about-one">
+                    <img src="C:\Users\rahana khatoon\OneDrive\Pictures\namaste punjab\namste punjab professional image\kishan lal ji main founder of namaste punjab.jpeg" alt="">
+                    <div class="about-text">
+                      <p>In the heart of the Indian subcontinent, where the bustling Delhi-Mumbai highway carves its path through the countryside, there stood a humble dhaba that would soon become a legend in its own right. It was 1977 when Mr. Kishan Lal ji, a man with a vision and a palate for authentic Punjabi cuisine, set up his modest eatery, Haryana Hotel, at Mudasa.
+                
+                        As the wheels of time turned, so did the fortunes of Haryana Hotel. The aroma of spices, the sizzle of tandoori, and the warmth of hospitality drew travelers from far and wide. Mr. Kishan Lal's passion for food and dedication to his craft turned his dhaba into a sanctuary for weary travelers and food enthusiasts alike.
+                        
+                        In 1984, the baton of this culinary legacy was passed on to Mr. Kishan Lal's elder son, Mr. Pankaj Dhingra. With his father's recipes and guidance, Pankaj stepped into the world of food business. His dedication and commitment to maintaining the standards set by his father turned out to be the secret ingredient that kept Haryana Hotel shining.
+
+                        The year 1991 saw another milestone in the journey of Haryana Hotel when Mr. Kishan Lal's younger son, Mr. Jugesh Dhingra, joined the family business alongside his father and brother. Together, they formed an unstoppable trio, determined to carry forward the legacy of their father and take Haryana Hotel to greater heights.
+
+The bond between the Dhingra family and their patrons grew stronger with each passing day. People didn't just come for the food; they came for the experience, for the feeling of being welcomed into the Dhingra family's home away from home. The love and affection showered upon Kishan Lal Dhaba for its excellent Punjabi cuisine, impeccable service, and genuine warmth was unparalleled.
+
+However, fate had its own plans. In 1989, tragedy struck when Mr. Kishan Lal ji passed away, leaving behind a void that seemed impossible to fill. But the flame of passion he ignited in his sons burned brighter than ever. Determined to keep their father's dream alive, the Dhingra family stood together, facing the storm with courage and resilience.
+
+After the demise of their father, the family made a tough decision to move to Delhi. It was a move prompted by the desire to be close to Mr. Pankaj Dhingra's mother's relatives. In the bustling streets of Delhi, amidst the chaos of the city, the Dhingra family found a new home.
+
+At the tender age of 16, Pankaj Dhingra took over the reins of the family business. With his father's recipes as his guide and the love of his family as his strength, Pankaj continued to run the business successfully, upholding the legacy of Haryana Hotel with pride and determination.
+
+Haryana Hotel wasn't just a dhaba; it was a symbol of tradition, of family, and of the undying spirit of entrepreneurship. It was a place where strangers became friends over steaming plates of butter chicken and piping hot naan. It was a place where memories were made, stories were shared, and appetites were satisfied.
+
+Today, as we look back on the journey of Haryana Hotel, we see more than just a dhaba on the side of the highway. We see a testament to the power of passion, dedication, and family. We see the legacy of Mr. Kishan Lal ji, alive and thriving, in every bite of their delicious Punjabi cuisine. And as long as there are hungry travelers on the Delhi-Mumbai highway, the flame of Haryana Hotel will continue to burn bright, lighting the way for generations to come.
+                        
+                       </p>
+                    </div>
+                </section>
+                </article>
+              </main>
+            
+            
+
+<!-- footer section start from here -->
+
+              <footer id="footer">
+                <div class="footer-top flex-row">
+                    <div class="flex-col">
+                        <h4 class="logo-name"> Namaste Punjab</h4>
+                        <p class="desc">At Namaste Punjab, we are driven by an unwavering commitment to uncompromising freshness and quality. Our dedication to gracious hospitality is evident in every dish we serve. With a growing list of restaurants, we invite you to experience the authentic flavors and warm hospitality of Punjab like never before.</p>
+            
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/namastepunjabindia/"><i class="icon bx bxl-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/namastepunjab/"><i class="icon bx bxl-instagram"></i></a></li>
+                            <li><a href="https://wa.me/+919654422206?text=Hello!%20I%20came%20across%20your%20restaurant%20on%20Restaurant%20Guru%20website!%20"><i class="icon bx bxl-whatsapp"></i></a></li>
+                            <!-- <li><a href="#"><i class="icon bx bxl-linkedin"></i></a></li> -->
+                        </ul>
+                    </div>
+            
+                    <div class="flex-col">
+                       <h4 class="heading">ADDRESS</h4>
+                       <div class="map-1">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=28.6074146000,77.4358186000"><i class='bx bxs-map' ></i></a></div>
+                        <P class="desc">Galaxy Blue Sapphire Mall ,Greater Noida</P>
+                        <p class="desc">p: +91 96544 22206<br>E:namstepunjab@gmail.com</p>
+            
+            
+                        <div class="map-1">
+                         <a href="https://www.google.com/maps/dir/?api=1&destination=28.6383831903,77.3658584431"><i class='bx bxs-map' ></i></a></div>
+                         <P class="desc">Windsor Park,Indrapuram</P>
+                         <p class="desc">p: +91 9319321416<br>E:namstepunjab@gmail.com</p>
+            
+                         <div class="map-1">
+                             <a href="https://maps.app.goo.gl/HwrfNw9UStpibZcj8?g_st=iw"><i class='bx bxs-map' ></i></a></div>
+                             <P class="desc">Advant Navis Business Park , Greater Noida</P>
+                             <p class="desc">p: +91 96544 22206</p>
+            
+                    </div>
+            
+                    <div class="flex-col">
+                        <h4 class="heading">OPEN HOURS</h4>
+                        <ul class="timing flex-col">
+                            <li>
+                                <p class="days">Monday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                            <li>
+                                <p class="days">Tuesday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                            <li>
+                                <p class="days">Wednesday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                            <li>
+                                <p class="days">Thursday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                            <li>
+                                <p class="days">Friday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                            <li>
+                                <p class="days">Saturday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                            <li>
+                                <p class="days">Sunday</p>
+                                <div class="time">12:00 PM - 1:00 AM</div>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="flex-col">
+                        <h4 class="heading">MORE INFO</h4>
+                        <a href="image.html">Gallery</a>
+                        <a href="about.html">About</a>
+                        <a href="https://www.google.com/maps/reserve/v/dine/c/4Y6eedEkXKw?source=pa&opi=89978449&hl=en-IN&gei=2a83ZoOACZST4-EPn5KzyAk&sourceurl=https://www.google.com/search?q%3Dnamaste%2Bpunjab%2Breviews%26sca_esv%3D1b3eff12a321d9fe%26sxsrf%3DADLYWIIpxVat_Sjyw5taS_WTKqPXIzMtnQ:1714925521988%26source%3Dhp%26ei%3D0a83ZsblOeyIjuMPi62AkAw%26iflsig%3DAL9hbdgAAAAAZje94U7A9clUkN_a5GezFnXHtxUiFWL3%26oq%3Dnamaste%2B%26gs_lp%3DEgdnd3Mtd2l6IghuYW1hc3RlICoCCAAyChAjGIAEGCcYigUyChAjGIAEGCcYigUyDhAuGIAEGMcBGI4FGK8BMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyDhAuGIAEGMcBGJgFGK8BMggQABiABBixA0iCI1DGAljCGHACeACQAQCYAYECoAHUDaoBBTAuNS40uAEByAEA-AEBmAILoAKiDqgCCsICBxAjGCcY6gLCAhEQLhiABBixAxjRAxiDARjHAcICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhQQLhiABBixAxiDARjHARiOBRivAcICCBAuGIAEGLEDwgILEAAYgAQYkgMYigXCAggQABiABBjJA8ICCBAAGIAEGJIDwgILEAAYgAQYsQMYyQOYAxiSBwUyLjUuNKAHrXM%26sclient%3Dgws-wiz">Reservation</a>
+                        <a href="https://r.search.yahoo.com/_ylt=AwrOqofkqDhmL1QTW5xXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1716198885/RO=10/RU=https%3a%2f%2fwww.zomato.com%2fnamastepunjabgaurcity/RK=2/RS=ni5Jyk6tGI6e8PJdGNvhHXMtGk4-">Order Now</a>
+                    
+                    </div>
+                </div>
+                <div class="footer-bottom flex-row">
+                    <span>Copyright & Copy 2024 All right reserved ! Made by Anshu Malakar</span>
+                </div>
+              </footer>
+            <!-- zoom in function with the help of java script -->
+            <!-- <script>
+                function zoomIn(image) {
+                  image.classList.toggle('zoomed');
+                }
+              </script> -->
+            
+              <!-- bar button formstaion script start -->
+            
+              <script>document.addEventListener('DOMContentLoaded', function () {
+                const openBtn = document.querySelector('.open-btn');
+                const closeBtn = document.querySelector('.close-btn');
+                const sidebar = document.querySelector('.sidebar');
+              
+                openBtn.addEventListener('click', function () {
+                  sidebar.style.width = '250px';
+                });
+              
+                closeBtn.addEventListener('click', function () {
+                  sidebar.style.width = '0';
+                });
+              });</script>
+            
+            
+            
+              <!-- bar formation button end here -->
+            
+            <!-- footer id end -->
+             
+            <!-- jquery script link -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            
+            <!-- owl corousel script -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            
+            <!-- light gallery script -->
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.4.0/js/lightgallery.min.js"></script>
+            <!-- <script>
+            lightGallery(document.querySelector('.gallery-wrapper'));
+            </script> -->
+            
+            <!-- link javascript page -->
+            <script src="new.js"></script>
+            
+            </body>
+            </html>
